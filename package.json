@@ -1,0 +1,20 @@
+{
+  "name": "watch-together",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/theperfectlycleancode/watch-together.io.git",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+  ],
+  "author": "Samuel",
+  "license": "GPL",
+  "devDependencies": {
+    "electron": "^4.0.7"
+  }
+}

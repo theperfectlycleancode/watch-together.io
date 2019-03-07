@@ -1,0 +1,467 @@
+<<<<<<< current
+body {
+  height: 100vh;
+  -webkit-user-select: none;
+  background: transparent;
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: transparent;
+  font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+  line-height: 1;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  user-select: none;
+  font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.content-main {
+  background-color: #202225;
+}
+
+.main-screen {
+  vertical-align:middle;
+  -ms-flex-direction: column;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  background-color: #36393e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  width: 100vw;
+}
+
+.anime {
+  transition-duration: 0.2s;
+  width: 22%;
+  height: 25px;
+  background-color: #505370;
+  border-radius: 4px;
+  margin-top: 40px;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.anime:hover {
+  cursor: pointer;
+  transition-duration: 0.2s;
+  border-radius: 8px;
+  background-color: #62668D;
+}
+
+.testDiv {
+  overflow: scroll;
+}
+
+webview {
+  width:100%;
+  height:100%;
+}
+
+.box {
+  background-color: #4a4c52;
+}
+
+.search {
+  transition-duration: 0.3s;
+  width: 30%;
+  height: 40px;
+  position: relative;
+  -webkit-app-region: no-drag;
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border-radius: 4px;
+  margin-top: 4%;
+  padding-left: 4px;
+  color: white;
+}
+
+.connect {
+  transition-duration: 0.3s;
+  height: 40px;
+  position: relative;
+  -webkit-app-region: no-drag;
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  outline: 0;
+  vertical-align: baseline;
+  border-radius: 4px  ;
+  margin-top: 4%;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: white;
+}
+
+.create {
+  transition-duration: 0.3s;
+  height: 40px;
+  position: relative;
+  -webkit-app-region: no-drag;
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  outline: 0;
+  vertical-align: baseline;
+  border-radius: 4px  ;
+  margin-top: 4%;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: white;
+}
+.connect-button {
+  text-shadow: none;
+    border: 1px solid #181a1f;
+    background-color: #4d78cc;
+    background-image: linear-gradient(#557ecf, #4d78cc);
+    color: white;
+}
+.create-button {
+  text-shadow: none;
+    border: 1px solid #181a1f;
+    background-color: #4dcc66;
+    background-image: linear-gradient(#54ce64, #4dcc66);
+    color: white;
+}
+
+
+.header {
+  background-color: #202225;
+  width: 100%;
+  height: 18px;
+  -webkit-app-region: drag;
+  z-index: 3001;
+  display: flex;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  #margin-top: 4px;
+  -webkit-box-direction: reverse;
+-webkit-box-orient: horizontal;
+flex-direction: row-reverse;
+}
+
+.AppClose {
+
+}
+
+.AppMax:hover {
+    background-color: hsla(0,0%,100%,.05);
+}
+
+.AppMin:hover {
+    background-color: hsla(0,0%,100%,.05);
+}
+
+.winButton-U7zAqI {
+    -webkit-app-region: no-drag;
+    cursor: pointer;
+    height: 22px;
+    opacity: .6;
+    pointer-events: auto;
+    position: relative;
+    top: -2px;
+    width: 28px;
+}
+
+.justifyCenter-29N31w {
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.alignCenter-3VxkQP {
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.flex-3B1Tl4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+div {
+    display: block;
+}
+
+.directionRowReverse-2eZTxP {
+    -ms-flex-direction: row-reverse;
+    -webkit-box-direction: reverse;
+    -webkit-box-orient: horizontal;
+    flex-direction: row-reverse;
+}
+
+.AppClose:hover {
+  background-color: #f04747;
+}
+
+a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, ul, var {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+=======
+body {
+  height: 100vh;
+  -webkit-user-select: none;
+  background: transparent;
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: transparent;
+  font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+  line-height: 1;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  user-select: none;
+  font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.content-main {
+  background-color: #202225;
+}
+
+.main-screen {
+  vertical-align:middle;
+  -ms-flex-direction: column;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  background-color: #36393e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  width: 100vw;
+}
+
+.anime {
+  transition-duration: 0.2s;
+  width: 22%;
+  height: 25px;
+  background-color: #505370;
+  border-radius: 4px;
+  margin-top: 40px;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.anime:hover {
+  cursor: pointer;
+  transition-duration: 0.2s;
+  border-radius: 8px;
+  background-color: #62668D;
+}
+
+.testDiv {
+  overflow: scroll;
+}
+
+webview {
+  width:100%;
+  height:100%;
+}
+
+.box {
+  background-color: #4a4c52;
+}
+
+.search {
+  transition-duration: 0.3s;
+  width: 30%;
+  height: 40px;
+  position: relative;
+  -webkit-app-region: no-drag;
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border-radius: 4px;
+  margin-top: 4%;
+  padding-left: 4px;
+  color: white;
+}
+
+.connect {
+  transition-duration: 0.3s;
+  height: 40px;
+  position: relative;
+  -webkit-app-region: no-drag;
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  outline: 0;
+  vertical-align: baseline;
+  border-radius: 4px  ;
+  margin-top: 4%;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: white;
+}
+
+.create {
+  transition-duration: 0.3s;
+  height: 40px;
+  position: relative;
+  -webkit-app-region: no-drag;
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  outline: 0;
+  vertical-align: baseline;
+  border-radius: 4px  ;
+  margin-top: 4%;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: white;
+}
+.connect-button {
+  text-shadow: none;
+    border: 1px solid #181a1f;
+    background-color: #4d78cc;
+    background-image: linear-gradient(#557ecf, #4d78cc);
+    color: white;
+}
+.create-button {
+  text-shadow: none;
+    border: 1px solid #181a1f;
+    background-color: #4dcc66;
+    background-image: linear-gradient(#54ce64, #4dcc66);
+    color: white;
+}
+
+
+.header {
+  background-color: #202225;
+  width: 100%;
+  height: 18px;
+  -webkit-app-region: drag;
+  z-index: 3001;
+  display: flex;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  #margin-top: 4px;
+  -webkit-box-direction: reverse;
+-webkit-box-orient: horizontal;
+flex-direction: row-reverse;
+}
+
+.AppClose {
+
+}
+
+.AppMax:hover {
+    background-color: hsla(0,0%,100%,.05);
+}
+
+.AppMin:hover {
+    background-color: hsla(0,0%,100%,.05);
+}
+
+.winButton-U7zAqI {
+    -webkit-app-region: no-drag;
+    cursor: pointer;
+    height: 22px;
+    opacity: .6;
+    pointer-events: auto;
+    position: relative;
+    top: -2px;
+    width: 28px;
+}
+
+.justifyCenter-29N31w {
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.alignCenter-3VxkQP {
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.flex-3B1Tl4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+div {
+    display: block;
+}
+
+.directionRowReverse-2eZTxP {
+    -ms-flex-direction: row-reverse;
+    -webkit-box-direction: reverse;
+    -webkit-box-orient: horizontal;
+    flex-direction: row-reverse;
+}
+
+.AppClose:hover {
+  background-color: #f04747;
+}
+
+a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, ul, var {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+>>>>>>> before discard
