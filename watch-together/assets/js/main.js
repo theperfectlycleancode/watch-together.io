@@ -17,4 +17,16 @@ $(document).ready(function() {
     var window = remote.getCurrentWindow();
     window.minimize();
   });
+
+  $('.connect-button').on('click', function() {
+    $('.home').css("display","none");
+    $('.searching').css("display","block");
+    $('.searchmsg').text('Connecting to room...');
+  });
+
+  $('.create-button').on('click', function() {
+    $('.home').css("display","none");
+    $('.searching').css("display","block");
+    $('.searchmsg').text('Creating room...');
+  });
 });

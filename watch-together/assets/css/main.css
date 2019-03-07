@@ -114,6 +114,10 @@ webview {
   color: white;
 }
 
+.connect:hover {
+  cursor: pointer;
+}
+
 .create {
   transition-duration: 0.3s;
   height: 40px;
@@ -132,6 +136,11 @@ webview {
   padding-right: 16px;
   color: white;
 }
+
+.create:hover {
+  cursor: pointer;
+}
+
 .connect-button {
   text-shadow: none;
     border: 1px solid #181a1f;
@@ -161,6 +170,61 @@ webview {
   -webkit-box-direction: reverse;
 -webkit-box-orient: horizontal;
 flex-direction: row-reverse;
+}
+
+
+
+.home {
+  display: block;
+}
+
+.room {
+  display: none;
+}
+
+.searching {
+  display: none;
+}
+.searchmsg {
+  color: white !important;
+  font-size: 200% !important;
+  margin-top: 10vh !important;
+}
+
+.popup {
+  background-color: black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 30%;
+  height: 50%;
+  margin-top: -15%;
+  margin-left: -15%;
+  position: fixed;
+  border-radius: 4px;
+  background-color: #36393f;
+  box-shadow: 0 0 0 1px rgba(32,34,37,.6), 0 2px 10px 0 rgba(0,0,0,.2);
+  z-index: 5001;
+}
+
+.popup .popup-title {
+  color: white !important;
+  font-size: 200% !important;
+  margin-top: 5% !important;
+}
+
+.popups {
+  bottom: 0;
+  contain: strict;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  position: fixed;
+  opacity: 0.85;
+  background-color: rgb(0, 0, 0);
+  z-index: 1000;
+  transform: translateZ(0px);
 }
 
 .AppClose {
