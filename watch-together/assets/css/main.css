@@ -175,13 +175,15 @@ flex-direction: row-reverse;
 
 
 .home {
-  display: block;
+  display: none;
 }
 
 .room {
   display: none;
 }
-
+.dev-room {
+  display: block;
+}
 .searching {
   display: none;
 }
@@ -189,6 +191,12 @@ flex-direction: row-reverse;
   color: white !important;
   font-size: 200% !important;
   margin-top: 10vh !important;
+}
+
+.webview-shared {
+position: fixed;
+width: 100%;
+height: 90%;
 }
 
 .popup {
@@ -205,6 +213,7 @@ flex-direction: row-reverse;
   background-color: #36393f;
   box-shadow: 0 0 0 1px rgba(32,34,37,.6), 0 2px 10px 0 rgba(0,0,0,.2);
   z-index: 5001;
+  color: white !important;
 }
 
 .popup .popup-title {
@@ -213,7 +222,94 @@ flex-direction: row-reverse;
   margin-top: 5% !important;
 }
 
+.popup .popup-desc {
+  color: white !important;
+  font-size: 200% !important;
+  margin-top: 5% !important;
+}
+
+.popup-text-input {
+  transition-duration: 0.3s;
+  width: 30%;
+  height: 40px;
+  position: relative;
+  -webkit-app-region: no-drag;
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border-radius: 4px;
+  margin-top: 4%;
+  padding-left: 4px;
+  color: white;
+  background-color: #4a4c52;
+}
+
+.popup-accept-input {
+  transition-duration: 0.3s;
+  height: 40px;
+  position: relative;
+  -webkit-app-region: no-drag;
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  outline: 0;
+  vertical-align: baseline;
+  border-radius: 4px  ;
+  margin-top: 4%;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: white;
+
+  text-shadow: none;
+  border: 1px solid #181a1f;
+  background-color: #4dcc66;
+  background-image: linear-gradient(#54ce64, #4dcc66);
+  color: white;
+}
+
+.popup-accept-input:hover {
+  cursor: pointer;
+}
+
+
+.btn {
+  transition-duration: 0.3s;
+  height: 40px;
+  position: relative;
+  -webkit-app-region: no-drag;
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  outline: 0;
+  vertical-align: baseline;
+  border-radius: 4px  ;
+  margin-top: 4%;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: white;
+
+  text-shadow: none;
+  border: 1px solid #181a1f;
+  background-color: #4dcc66;
+  background-image: linear-gradient(#54ce64, #4dcc66);
+  color: white;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
 .popups {
+  display: none;
   bottom: 0;
   contain: strict;
   left: 0;
@@ -223,7 +319,7 @@ flex-direction: row-reverse;
   position: fixed;
   opacity: 0.85;
   background-color: rgb(0, 0, 0);
-  z-index: 1000;
+  z-index: 5000;
   transform: translateZ(0px);
 }
 
