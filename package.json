@@ -1,7 +1,7 @@
 {
   "name": "watch-together",
   "version": "1.0.0",
-  "description": "",
+  "description": "desc..",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
@@ -10,7 +10,7 @@
   "keywords": [
     "Electron",
     "quick",
-    "start",
+    "start"
   ],
   "author": "Samuel",
   "license": "GPL",
