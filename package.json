@@ -4,7 +4,10 @@
   "description": "desc..",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build",
+    "postinstall": "electron-builder install-app-deps"
   },
   "repository": "https://github.com/theperfectlycleancode/watch-together.io.git",
   "keywords": [
@@ -12,9 +15,37 @@
     "quick",
     "start"
   ],
+  "build": {
+    "appId": "watch-together",
+    "win": {
+      "target": "NSIS",
+      "icon": "build/icon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "category": "me.samuel.watch.together.io",
+      "icon": "build/icon.ico"
+    }
+  },
   "author": "Samuel",
   "license": "GPL",
   "devDependencies": {
-    "electron": "^4.0.7"
+    "electron-builder": "^20.39.0",
+    "electron-rebuild": "^1.8.4"
+  },
+  "dependencies": {
+    "@hyperswarm/discovery": "^1.2.0",
+    "axios": "^0.18.0",
+    "duplexify": "^4.0.0",
+    "electron": "^4.1.1",
+    "events": "^3.0.0",
+    "nanoresource": "^1.0.0",
+    "net": "^1.0.2",
+    "node-gyp-build": "^3.8.0",
+    "noise-network": "^1.0.2",
+    "noise-peer": "^1.0.1",
+    "sodium-native": "^2.3.0",
+    "update-electron-app": "^1.3.0",
+    "utp-native": "^2.1.3"
   }
 }

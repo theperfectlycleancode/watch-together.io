@@ -1,0 +1,12 @@
+directories:
+  output: dist
+  buildResources: build
+appId: watch-together
+win:
+  target: NSIS
+  icon: build/icon.ico
+mac:
+  target: dmg
+  category: me.samuel.watch.together.io
+  icon: build/icon.ico
+electronVersion: 4.0.7

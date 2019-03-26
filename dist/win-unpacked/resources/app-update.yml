@@ -1,0 +1,4 @@
+owner: theperfectlycleancode
+repo: watch-together.io
+provider: github
+updaterCacheDirName: watch-together-updater

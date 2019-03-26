@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html>
+<html lang="en-GB" style="font-size: 100%" data-react-helmet="lang,style">
+
 <head>
   <meta charset="UTF-8">
   <title>watch-together.io</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
   <link href="https://vjs.zencdn.net/6.4.0/video-js.css" rel="stylesheet">
@@ -12,15 +12,35 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="../assets/css/main.css" type="text/css"/>
   <link rel="stylesheet" href="../assets/css/loader.css" type="text/css"/>
+  <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/peerjs@0.3.20/dist/peer.min.js"></script>-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" name="viewport">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
+  <link href="https://vjs.zencdn.net/6.4.0/video-js.css" rel="stylesheet">
+  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+  <script type="text/javascript" src="../assets/js/jquery.slimscroll.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="../assets/css/main.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/dctheme.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/loader.css" type="text/css" />
+  <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/lcbhdgefieegnkbopmgklhlpjjdgmbog">
 </head>
+
 <body>
-  <div class="content-main">
+  <div class="content-main old-container-mount" style="display: block">
     <div class="header">
       <div class="AppClose winButton-U7zAqI justifyCenter-29N31w alignCenter-3VxkQP flex-3B1Tl4 directionRowReverse-2eZTxP">
-        <svg name="TitleBarClose" width="12" height="12" viewBox="0 0 12 12"><polygon fill="#ffffff" fill-rule="evenodd" points="11 1.576 6.583 6 11 10.424 10.424 11 6 6.583 1.576 11 1 10.424 5.417 6 1 1.576 1.576 1 6 5.417 10.424 1"></polygon></svg>
+        <svg name="TitleBarClose" width="12" height="12" viewBox="0 0 12 12">
+          <polygon fill="#ffffff" fill-rule="evenodd" points="11 1.576 6.583 6 11 10.424 10.424 11 6 6.583 1.576 11 1 10.424 5.417 6 1 1.576 1.576 1 6 5.417 10.424 1"></polygon>
+        </svg>
       </div>
-      <div class="AppMax winButton-U7zAqI center-1MLNrE flex-3B1Tl4 justifyCenter-29N31w alignCenter-3VxkQP"><svg name="TitleBarMaximize" width="12" height="12" viewBox="0 0 12 12"><rect width="9" height="9" x="1.5" y="1.5" fill="none" stroke="#ffffff"></rect></svg></div>
-      <div class="AppMin winButton-U7zAqI center-1MLNrE flex-3B1Tl4 justifyCenter-29N31w alignCenter-3VxkQP"><svg name="TitleBarMinimize" width="12" height="12" viewBox="0 0 12 12"><rect fill="#ffffff" width="10" height="1" x="1" y="6"></rect></svg></div>
+      <div class="AppMax winButton-U7zAqI center-1MLNrE flex-3B1Tl4 justifyCenter-29N31w alignCenter-3VxkQP"><svg name="TitleBarMaximize" width="12" height="12" viewBox="0 0 12 12">
+          <rect width="9" height="9" x="1.5" y="1.5" fill="none" stroke="#ffffff"></rect>
+        </svg></div>
+      <div class="AppMin winButton-U7zAqI center-1MLNrE flex-3B1Tl4 justifyCenter-29N31w alignCenter-3VxkQP"><svg name="TitleBarMinimize" width="12" height="12" viewBox="0 0 12 12">
+          <rect fill="#ffffff" width="10" height="1" x="1" y="6"></rect>
+        </svg></div>
     </div>
     <div class="main-screen">
       <div class="app-header">
@@ -29,16 +49,33 @@
       <div class="app-body">
         <div class="home">
           <center>
-            <input class="search box" placeholder="######" type="text">
+            <input class="search box roomidbox" placeholder="######" type="text">
             <button class="connect connect-button"> Connect </button>
             <button class="create create-button"> Create </button>
           </center>
         </div>
         <div class="room">
-
+          <center>
+            <div class="titleWrapper-110xT9 theme-dark">
+              <div class="flex-1xMQg5 flex-1O1GKY horizontal-1ae9ci horizontal-2EEEnY flex-1O1GKY directionRow-3v3tfG justifyStart-2NDFzi alignCenter-1dQNNs noWrap-3jynv6 headerBarDrag-3bf7wG headerBar-UHpsPw title-3qD0b-">
+                <div class="title-1aVOXw title-CZQTru weightSemiBold-NJexzi">
+                  <div class="titleText-3X-zRE">
+                    <span class="channelName-3stJzi">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="channelIcon-MsmKOO">
+                        <path fill="currentColor"
+                          d="M2.27333333,12 L2.74666667,9.33333333 L0.08,9.33333333 L0.313333333,8 L2.98,8 L3.68666667,4 L1.02,4 L1.25333333,2.66666667 L3.92,2.66666667 L4.39333333,0 L5.72666667,0 L5.25333333,2.66666667 L9.25333333,2.66666667 L9.72666667,0 L11.06,0 L10.5866667,2.66666667 L13.2533333,2.66666667 L13.02,4 L10.3533333,4 L9.64666667,8 L12.3133333,8 L12.08,9.33333333 L9.41333333,9.33333333 L8.94,12 L7.60666667,12 L8.08,9.33333333 L4.08,9.33333333 L3.60666667,12 L2.27333333,12 L2.27333333,12 Z M5.02,4 L4.31333333,8 L8.31333333,8 L9.02,4 L5.02,4 L5.02,4 Z"
+                          transform="translate(1.333 2)"></path>
+                      </svg>
+                      roomid
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </center>
         </div>
         <div class="dev-room">
-          <webview class="webview-shared" src="https://openload.co/embed/MpPHNWX20pM/Dororo.E07.GerSub.720p.WebRip.x264.mp4">
+          <webview class="webview-shared" src="">
           </webview>
           <button class="btn testvidin"> TestVideo Input </button>
         </div>
@@ -88,6 +125,184 @@
       </center>
     </div>
   </div>
-  <script> require('../assets/js/main.js')</script>
+
+  <div id="app-mount" class="appMount-3lHmkl room-mount" style="display: none">
+    <div class="typeWindows-1za-n7 titleBar-AC4pGV horizontalReverse-3tRjY7 flex-1O1GKY directionRowReverse-m8IjIq justifyStart-2NDFzi alignStretch-DpGPf3">
+      <div class="winButtonClose-1HsbF- winButton-iRh8-Z flexCenter-3_1bcw flex-1O1GKY justifyCenter-3D2jYp alignCenter-1dQNNs"><svg name="TitleBarClose" width="12" height="12" viewBox="0 0 12 12">
+          <polygon fill="#ffffff" fill-rule="evenodd" points="11 1.576 6.583 6 11 10.424 10.424 11 6 6.583 1.576 11 1 10.424 5.417 6 1 1.576 1.576 1 6 5.417 10.424 1"></polygon>
+        </svg></div>
+      <div class="winButtonMax winButtonMinMax-PBQ2gm winButton-iRh8-Z flexCenter-3_1bcw flex-1O1GKY justifyCenter-3D2jYp alignCenter-1dQNNs"><svg name="TitleBarMaximize" width="12" height="12" viewBox="0 0 12 12">
+          <rect width="9" height="9" x="1.5" y="1.5" fill="none" stroke="#ffffff"></rect>
+        </svg></div>
+      <div class="winButtonMin winButtonMinMax-PBQ2gm winButton-iRh8-Z flexCenter-3_1bcw flex-1O1GKY justifyCenter-3D2jYp alignCenter-1dQNNs"><svg name="TitleBarMinimize" width="12" height="12" viewBox="0 0 12 12">
+          <rect fill="#ffffff" width="10" height="1" x="1" y="6"></rect>
+        </svg></div>
+    </div>
+    <div class="app-19_DXt platform-win">
+      <div class="app-2rEoOp vertical-V37hAW flex-1O1GKY directionColumn-35P_nr theme-dark">
+        <div class="layers-3iHuyZ vertical-V37hAW flex-1O1GKY directionColumn-35P_nr spacer-1fA9zc">
+          <div role="dialog" aria-hidden="false" class="layer-3QrUeG" style="">
+            <div class="flex-1xMQg5 flex-1O1GKY horizontal-1ae9ci horizontal-2EEEnY flex-1O1GKY directionRow-3v3tfG justifyStart-2NDFzi alignStretch-DpGPf3 noWrap-3jynv6 container-2lgZY8 firefoxFixScrollFlex-cnI2ix" style="flex: 1 1 auto;">
+              <div class="flex-1xMQg5 flex-1O1GKY vertical-V37hAW flex-1O1GKY directionColumn-35P_nr justifyStart-2NDFzi alignStretch-DpGPf3 noWrap-3jynv6 base-3dtUhz" style="flex: 1 1 auto; margin-left: 0px;">
+                <div class="flexChild-faoVW3" style="flex: 0 0 auto;">
+                  <div></div>
+                </div>
+                <div class="flex-1xMQg5 flex-1O1GKY horizontal-1ae9ci horizontal-2EEEnY flex-1O1GKY directionRow-3v3tfG justifyStart-2NDFzi alignStretch-DpGPf3 noWrap-3jynv6 spacer-29U_x8 firefoxFixScrollFlex-cnI2ix" style="flex: 1 1 auto;">
+                  <div class="channels-Ie2l6A vertical-V37hAW flex-1O1GKY directionColumn-35P_nr">
+                    <div class="flex-1xMQg5 flex-1O1GKY vertical-V37hAW flex-1O1GKY directionColumn-35P_nr justifyStart-2NDFzi alignStretch-DpGPf3 noWrap-3jynv6 container-PNkimc firefoxFixScrollFlex-cnI2ix" style="flex: 1 1 auto;">
+
+                      <div class="flexChild-faoVW3" style="flex: 0 0 auto;">
+                        <div class="container-2Rl01u hasDropdown-2invhV">
+                          <header class="header-2o-2hj"><span class="name-3YKhmS">samuel</span></header>
+                        </div>
+                      </div>
+                      <div class="positionedContainer-l-ZqRq">
+                        <div class="unreadTop-73gZ2_ unread-1s3J68 container-35XQWE">
+                          <div class="bar-30k2ka flexCenter-3_1bcw flex-1O1GKY justifyCenter-3D2jYp alignCenter-1dQNNs unreadBar-3YD_k9 unread-1xRYoj active-1SSsBb" style="transform: translateY(-150%);">New Unreads<svg name="ArrowUp" width="24"
+                              height="24" class="icon-2aINcz" viewBox="0 0 24 24">
+                              <polygon fill="currentColor" fill-rule="nonzero" points="13 20 11 20 11 8 5.5 13.5 4.08 12.08 12 4.16 19.92 12.08 18.5 13.5 13 8"></polygon>
+                            </svg></div>
+                        </div>
+                      </div>
+                      <div class="scrollerWrap-2lJEkd firefoxFixScrollFlex-cnI2ix scrollerThemed-2oenus themeGhostHairlineChannels-3G0x9_ scrollerFade-1Ijw5y">
+                        <div class="scroller-2FKFPG firefoxFixScrollFlex-cnI2ix systemPad-3UxEGl scroller-2wx7Hm">
+                          <div style="width: 100%; height: 0px; visibility: hidden;"></div>
+                          <div class="opt-btns-actions-container">
+                            <!--  <div class="container-7">
+                              <div class="containerDefault-3GGEv_" draggable="true">
+                                <div class="flex-1xMQg5 flex-1O1GKY horizontal-1ae9ci horizontal-2EEEnY flex-1O1GKY directionRow-3v3tfG justifyStart-2NDFzi alignStart-H-X2h- noWrap-3jynv6 wrapperDefault-10Jfvz cursorPointer-1ajlYk"
+                                  style="flex: 1 1 auto;">
+                                  <div class="nameDefault-2DI02H colorTransition-2-M2tg overflowEllipsis-2JOaZ6" style="flex: 1 1 auto;">Hook video</div>
+                                  <div class="flex-1xMQg5 flex-1O1GKY horizontal-1ae9ci horizontal-2EEEnY flex-1O1GKY directionRow-3v3tfG justifyStart-2NDFzi alignCenter-1dQNNs noWrap-3jynv6 marginReset-236NPn" style="flex: 0 1 auto;"><button
+                                      type="button" class="addButton-1BORro button-38aScr lookBlank-3eh9lL colorBrand-3pXr91 grow-q77ONN">
+                                      <div class="contents-18-Yxp"></div>
+                                    </button></div>
+                                </div>
+                              </div>
+                            </div>-->
+                          </div>
+
+                          <div style="width: 100%; height: 320px; visibility: hidden;"></div>
+                        </div>
+                      </div>
+                      <div class="unreadBottom-3hWQ7c unread-1s3J68 container-35XQWE">
+                        <div class="bar-30k2ka flexCenter-3_1bcw flex-1O1GKY justifyCenter-3D2jYp alignCenter-1dQNNs unreadBar-3YD_k9 unread-1xRYoj active-1SSsBb" style="transform: translateY(150%);">New Unreads<svg name="ArrowDown" width="24"
+                            height="24" class="icon-2aINcz down-15EnQ5" viewBox="0 0 24 24">
+                            <polygon fill="currentColor" fill-rule="nonzero" points="13 20 11 20 11 8 5.5 13.5 4.08 12.08 12 4.16 19.92 12.08 18.5 13.5 13 8"></polygon>
+                          </svg></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat-3bRxxu firefoxFixScrollFlex-cnI2ix">
+                    <div class="titleWrapper-1l0xT9 theme-dark">
+                      <div class="flex-1xMQg5 flex-1O1GKY horizontal-1ae9ci horizontal-2EEEnY flex-1O1GKY directionRow-3v3tfG justifyStart-2NDFzi alignCenter-1dQNNs noWrap-3jynv6 headerBarDrag-3bf7wG headerBar-UHpsPw title-3qD0b-"
+                        style="flex: 0 0 auto;">
+                        <div class="title-1aVOXw title-CZQTru weightSemiBold-NJexzi">
+                          <div class="titleText-3X-zRE"><span class="channelName-3stJzi"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="channelIcon-MsmKOO">
+                                <path fill="currentColor"
+                                  d="M2.27333333,12 L2.74666667,9.33333333 L0.08,9.33333333 L0.313333333,8 L2.98,8 L3.68666667,4 L1.02,4 L1.25333333,2.66666667 L3.92,2.66666667 L4.39333333,0 L5.72666667,0 L5.25333333,2.66666667 L9.25333333,2.66666667 L9.72666667,0 L11.06,0 L10.5866667,2.66666667 L13.2533333,2.66666667 L13.02,4 L10.3533333,4 L9.64666667,8 L12.3133333,8 L12.08,9.33333333 L9.41333333,9.33333333 L8.94,12 L7.60666667,12 L8.08,9.33333333 L4.08,9.33333333 L3.60666667,12 L2.27333333,12 L2.27333333,12 Z M5.02,4 L4.31333333,8 L8.31333333,8 L9.02,4 L5.02,4 L5.02,4 Z"
+                                  transform="translate(1.333 2)"></path>
+                              </svg>main</span></div>
+                        </div>
+                        <div class="flex-1xMQg5 flex-1O1GKY horizontal-1ae9ci horizontal-2EEEnY flex-1O1GKY directionRow-3v3tfG justifyStart-2NDFzi alignCenter-1dQNNs noWrap-3jynv6" style="flex: 0 0 auto;">
+                          <div class="search-l1Wz-Q theme-dark">
+                            <div tabindex="0" class="search-2oPWTC" role="button">
+                              <div class="searchBar-3dMhjb searchBar-2_Yu-C">
+                                <div class="DraftEditor-root">
+                                  <div class="public-DraftEditorPlaceholder-root">
+                                    <div class="public-DraftEditorPlaceholder-inner" id="placeholder-1e8o8" style="white-space: pre-wrap;"></div>
+                                  </div>
+                                  <div class="DraftEditor-editorContainer">
+                                    <div aria-describedby="placeholder-1e8o8" class="notranslate public-DraftEditor-content" contenteditable="true" role="textbox" spellcheck="false"
+                                      style="outline: none; user-select: text; white-space: pre-wrap; overflow-wrap: break-word;">
+                                      <div data-contents="true">
+                                        <div class="" data-block="true" data-editor="1e8o8" data-offset-key="3s46a-0-0">
+                                          <div data-offset-key="3s46a-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="3s46a-0-0"><br data-text="true"></span></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div tabindex="0" class="searchBarIcon-1J6sKG icon-38sknP" role="button"><i class="icon-3cZ1F_ iconSearchBarEyeGlass-2n38zb visible-3V0mGj"></i><i class="icon-3cZ1F_ iconSearchBarClear-2DW-Kr"></i></div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--<div class="divider-2PMBlV"></div>-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="membersWrap-2h-GB4">
+                    <div class="scrollerWrap-2lJEkd firefoxFixScrollFlex-cnI2ix scrollerWrap-otKoZo scrollerThemed-2oenus themeGhostHairline-DBD-2d scrollerFade-1Ijw5y">
+                      <div class="scroller-2FKFPG firefoxFixScrollFlex-cnI2ix systemPad-3UxEGl members-1998pB">
+                        <div style="width: 100%; height: 0px; visibility: hidden;"></div>
+                        <div class="membersGroup-v9BXpm">ADMIN</div>
+                        <div class="memberOnline-1CIh-0 member-3W1lQa">
+                          <div class="content-OzHfo4">
+                            <span class="avatarWrapper-3B0ndJ">
+                            </span>
+                            <div class="memberInner-2CPc3V">
+                              <div class="nameTag-3p0yK- nameTag-m8r81H" style="color: rgb(231, 76, 60);"><span class="usernameOnline-3jr_0Y username-1cB_5E">Admin user</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="membersGroup-v9BXpm">USERS</div>
+                        <div class="memberOnline-1CIh-0 member-3W1lQa">
+                          <div class="content-OzHfo4">
+                            <span class="avatarWrapper-3B0ndJ">
+                            </span>
+                            <div class="memberInner-2CPc3V">
+                              <div class="nameTag-3p0yK- nameTag-m8r81H" style="color: rgb(173, 20, 87);">
+                                <span class="usernameOnline-3jr_0Y username-1cB_5E">USER</span><span class="botTagRegular-2HEhHi botTag-2WPJ74 bot-2Fta1w">VAL</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div style="width: 100%; height: 3200px; visibility: hidden;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="uploadArea-3QgLtW">
+      <div class="uploadDropModal-2kTwbc">
+        <div class="bgScale-1otPtc"></div>
+        <div class="inner-3nWsbo">
+          <div class="icons-1w691d">
+            <div class="wrapOne-14G98n">
+              <div class="icon-kyxXVr one-2crnLX"></div>
+            </div>
+            <div class="wrapThree-1CNQ42">
+              <div class="icon-kyxXVr three-27ScFD"></div>
+            </div>
+            <div class="wrapTwo-mQGI3R">
+              <div class="icon-kyxXVr two-3BBQI9"></div>
+            </div>
+          </div>
+          <div class="title-2Vtl4y">Drag &amp; Drop</div>
+          <div class="instructions-2Du9gG">
+            <pre>You can add comments before uploading.
+Hold shift to upload directly.</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pictureInPicture-3VocJq theme-dark"></div>
+    <div class="theme-dark container-wrYOxa"></div>
+  </div>
+  <div class="tooltips-FhwIyl"></div>
+  <div class="theme-dark popouts-3dRSmE"></div>
+  <div class="theme-dark"></div>
+  <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+<!--  <script src="https://cdn.jsdelivr.net/npm/peerjs@0.3.20/dist/peer.min.js"></script>-->
+  <script>
+    require('../assets/js/main.js')
+  </script>
 </body>
+
 </html>
